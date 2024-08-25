@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-button slot ="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-button>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Apa yang ingin kamu lakukan dengan limbah daur ulang?</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Saya ingin membelinya</ion-label>
+          <ion-radio slot="start" value="CLIENT"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Saya ingin menjualnya</ion-label>
+          <ion-radio slot="start" value="PARTNER"></ion-radio>
+        </ion-item>
+        </ion-radio-group>
+      </ion-card-content>
+  </ion-card> 
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Kontak</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nama</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Surel</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Sandi</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Konfirmasi sandi</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nomor WA</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card> 
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Informasi Alamat</ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="floating">No. Rumah</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Kecamatan</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Kabupaten</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Provinsi</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Kode Pos</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Informasi Tambahan</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="success">Register</ion-button>
+</ion-content>
