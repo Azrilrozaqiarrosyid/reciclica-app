@@ -3,7 +3,7 @@
     <form [formGroup]="form">
     <ion-card>
       <ion-card-header>
-        <ion-card-title color="success">Reciclica App</ion-card-title>
+        <ion-card-title color="success">PGPBL App</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
@@ -14,6 +14,7 @@
 
         <app-error-message message="Email is Mandatory" [field]="form.get('email')" error="required"></app-error-message>
         <app-error-message message="Email is Invalid" [field]="form.get('email')" error="email"></app-error-message>
+
 
         <!-- Display error message if 'required' error exists and field is touched
         <ion-label color="danger" *ngIf="form.get('email')?.touched && form.get('email')?.hasError('required')">
@@ -37,7 +38,8 @@
           Password is Mandatory
         </ion-label> -->
 
-        <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('email')?.valid">Forgot email/password</ion-button>
+        <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('email')?.valid"
+        (click)="forgotEmailPassword()">Forgot email/password</ion-button>
         <ion-button color="success" size="full" [disabled]="!form.valid" (click)="login()">Login</ion-button>
         <ion-button color="success" fill="clear" size="full" (click)="register()">Register</ion-button>
       </ion-card-content>

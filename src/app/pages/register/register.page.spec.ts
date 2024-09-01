@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RegisterPage } from './register.page';
 import { IonicModule } from '@ionic/angular';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { Router } from '@angular/router';
 
 describe('RegisterPage', () => {
   let component: RegisterPage;
