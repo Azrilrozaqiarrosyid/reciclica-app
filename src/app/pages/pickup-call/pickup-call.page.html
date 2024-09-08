@@ -1,29 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar color="success">
-    <ion-button slot="start">
+    <ion-buttons slot="start">
       <ion-back-button text=""></ion-back-button>
-    </ion-button>
-    <ion-title>pickup-call</ion-title>
+    </ion-buttons>
+    <ion-title>Pickup call</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <img src="http://s2.glbimg.com/v42PknUjNHer8mislIMigF-w9nY=/s.glbimg.com/po/tt2/f/original/2015/10/15/capturar3.png" />
-  <ion-card>
-    <ion-card-content>
-      <p>Alamat: Jl. Mangga, 111</p>
-      <p>Kecamatan: Mlati</p>
-      <p>Kabupaten: Sleman</p>
-      <p>Provinsi: DIY</p>
-      <p>Kode Pos: 55248</p>
-      <p>Informasi Tambahan: Rumah oranye hadap barat</p>
-    </ion-card-content>
-  </ion-card>
-  <ion-list>
-    <ion-item lines="insert">
-      <ion-label position="floating">Catatan</ion-label>
-      <ion-textarea></ion-textarea>
-    </ion-item>
-  </ion-list>
-  <ion-button size="full" color="success">Buat</ion-button>
+<ion-content>
+<img src="https://akcdn.detik.net.id/visual/2023/09/06/google-maps-ktt-asean_169.png?w=715&q=90"/>
+<ion-card>
+  <ion-card-content>
+    <p>Address: Fake street, 777</p>
+    <p>Complement: Apto 111</p>
+    <p>Neighborhood: neighborhood</p>
+    <p>Zip Code: 0987654321</p>
+    <p>City name - state</p>
+  </ion-card-content>
+</ion-card>
+<ion-list>
+  <ion-item lines="inset">
+    <ion-label position="floating">Notes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+</ion-list>
+<ion-button size="full" color="success" (click)="newPickupCall()">Create pickup call</ion-button>
 </ion-content>

@@ -1,4 +1,3 @@
 export interface LoadingState {
-    show: boolean
+  show:boolean;
 }
-

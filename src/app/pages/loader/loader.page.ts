@@ -14,6 +14,7 @@ export class LoaderPage implements OnInit {
     setTimeout(() =>{
       this.router.navigate(['login']);
     }, 1000)
+   
   }
 
 }

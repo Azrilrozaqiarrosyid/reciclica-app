@@ -20,7 +20,7 @@ describe('LoaderPage', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(LoaderPage);
-    router  = TestBed.get(Router);
+    router -= TestBed.get(Router);
     component = fixture.componentInstance;
     // fixture.detectChanges();
   }));
